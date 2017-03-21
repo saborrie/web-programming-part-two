@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>Guestbook App</title>
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>Guestbook</h1>
+
+        <section>
+            <form name="form1" method="post" action="/">
+                <div>
+                    <input placeholder="Name" name="name" type="text">
+                </div>
+                <div>
+                    <input placeholder="Comment..." name="comment" type="text">
+                </div>
+                <div>
+                    <button>Send</button>
+                </div>
+            </form>
+        </section>
+
+        <section>
+            <h2>Comments</h2>
+            <div id="list">
+
+                {{ #comments }}
+
+                <div class="comment">
+                    <p class="text"> {{ comment }} </p>
+                    <p class="name"> {{ name }} </p> 
+                </div>
+
+                {{ /comments }}
+
+            </div>
+        </section>
+        <script src="main.js"></script>
+    </body>
+</html>

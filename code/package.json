@@ -1,0 +1,11 @@
+{
+  "name": "web-workshop-part-two",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "mustache-express": "^1.2.4",
+    "sqlite3": "^3.1.8"
+  }
+}
